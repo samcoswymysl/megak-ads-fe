@@ -7,7 +7,7 @@ export const Header = () => {
     return (
         <header>
             <h1><strong>Mega</strong> ogłoszenia</h1>
-            <Button>Dodaj ogłoszenie</Button>
+            <Button to="/add">Dodaj ogłoszenie</Button>
             <Search/>
         </header>
     )

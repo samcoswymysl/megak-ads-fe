@@ -2,3 +2,7 @@
     height: calc(100vh - 48px);
     background-color: cadetblue;
 }
+
+.leaflet-container{
+    height: 100%
+}

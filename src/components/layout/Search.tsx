@@ -6,12 +6,13 @@ import {Button} from "../UI/Button";
 import {SearchContext} from "../../context/search-context";
 
 export const Search = () => {
-    const {search, setSearch} = useContext(SearchContext)
+    const {setSearch} = useContext(SearchContext)
     const [inputVal, setInputVal] = useState('')
 
    const submitHandler = (e: FormEvent) => {
         e.preventDefault()
         setSearch(inputVal)
+       setInputVal('')
     }
 
 

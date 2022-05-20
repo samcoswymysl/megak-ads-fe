@@ -1,13 +1,19 @@
-import React from 'react'
+import React, {useContext, useEffect} from 'react'
 import {MapContainer, Marker, Popup, TileLayer} from "react-leaflet";
+import {SearchContext} from "../../context/search-context";
+
 import 'leaflet/dist/leaflet.css'
-
 import '../../utils/fix-map-icons'
-
 import './Map.css'
 
 
+
 export const Map = () => {
+   const {search, setSearch} = useContext(SearchContext)
+
+    useEffect(()=> {
+
+    },[search])
 
     return (
         <div className="map">

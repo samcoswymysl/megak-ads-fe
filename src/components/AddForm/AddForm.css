@@ -1,0 +1,29 @@
+.add-form {
+    width: 800px;
+    margin: 50px auto;
+}
+
+.add-form input, textarea {
+    width: 100%;
+
+    padding: 10px;
+}
+
+.add-form label {
+    display:block;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.add-form label small {
+    font-weight: 300;
+}
+
+.add-form button {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px;
+    font-size: 18px;
+}

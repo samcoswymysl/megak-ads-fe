@@ -6,8 +6,8 @@ import {Search} from "./Search";
 export const Header = () => {
     return (
         <header>
-            <h1><strong>Mega</strong> ogłoszenia</h1>
-            <Button>Dodaj ogłoszenie</Button>
+            <h1><a href="/"><strong>Mega</strong> ogłoszenia</a></h1>
+            <Button to="/add">Dodaj ogłoszenie</Button>
             <Search/>
         </header>
     )

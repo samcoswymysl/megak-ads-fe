@@ -7,6 +7,7 @@ import {AdListElement} from 'types'
 import 'leaflet/dist/leaflet.css'
 import '../../utils/fix-map-icons'
 import './Map.css'
+import {apiUrl} from "../../config/api";
 
 
 
@@ -15,10 +16,9 @@ export const Map = () => {
     const [ads, setAds] = useState<AdListElement[]>([])
 
     useEffect(()=> {
-        
+
         (async()=> {
-            console.log('map')
-            const res = await fetch(`http://localhost:5000/ad/search/${search}`)
+            const res = await fetch(`${apiUrl}ad/search/${search}`)
             const data = await res.json()
             setAds(data)
 

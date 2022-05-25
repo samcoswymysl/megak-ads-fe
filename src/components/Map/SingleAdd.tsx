@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {AdEntity} from 'types'
+import {apiUrl} from "../../config/api";
 
 interface Props {
     id: string
@@ -12,8 +13,7 @@ export const  SingleAdd = (props: Props) => {
 
     useEffect(()=> {
         (async ()=>{
-            console.log('xxxx')
-            const res = await fetch(`http://localhost:5000/ad/id/${props.id}`)
+            const res = await fetch(`${apiUrl}/ad/id/${props.id}`)
             const data = await res.json()
             setAd(data)
         })()

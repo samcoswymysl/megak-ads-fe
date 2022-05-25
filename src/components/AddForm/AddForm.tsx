@@ -3,6 +3,7 @@ import React, {SyntheticEvent, useState} from 'react';
 import './AddForm.css'
 import {Button} from "../UI/Button";
 import {geocode} from "../../utils/geoCoding";
+import {apiUrl} from "../../config/api";
 
 export const AddForm = () => {
     const [addressEr, setAddressEr] = useState(false)
@@ -35,7 +36,7 @@ export const AddForm = () => {
              setAddressEr(true)
              return
          }
-         const res = await fetch('http://localhost:5000/ad', {
+         const res = await fetch(`${apiUrl}/ad`, {
              method: 'POST',
              headers: {
                  'Content-Type': 'application/json',

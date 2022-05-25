@@ -1,0 +1,12 @@
+button, .button {
+    /*display: block;*/
+    padding: 1px 35px;
+    line-height: 22px;
+    text-decoration: none;
+    border-radius: 2px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: white;
+    background: #2A913E;
+    text-transform: uppercase;
+}
